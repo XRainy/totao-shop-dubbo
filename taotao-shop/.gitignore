@@ -1,0 +1,14 @@
+/docs/
+.settings/
+.project
+.classpath
+
+*.iml
+target/
+
+*.idea/
+
+.idea/
+
+classes/
+
