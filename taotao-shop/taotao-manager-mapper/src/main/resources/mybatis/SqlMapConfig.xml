@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties>
+        <property name="dialect" value="MYSQL" />
+    </properties>
+    <typeAliases>
+        <!--<typeAlias alias="" type="" />-->
+    </typeAliases>
+    <!--分页插件-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql" />
+        </plugin>
+    </plugins>
+    <mappers>
+        <mapper resource="mybatis/mapper/TbContentCategoryMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbContentMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbItemCatMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbItemDescMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbItemMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbItemParamItemMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbItemParamMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbOrderItemMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbOrderMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbOrderShippingMapper.xml"/>
+        <mapper resource="mybatis/mapper/TbUserMapper.xml"/>
+    </mappers>
+</configuration>
