@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ContentController {
 
     @Autowired
-    private ContentService contentService;
+    private ContentService contentService;//测试github公共提交
 
     @RequestMapping("/query/list")
     @ResponseBody
