@@ -16,6 +16,7 @@
         <module>taotao-manager-web</module>
         <module>taotao-rest</module>
         <module>taotao-portal</module>
+        <module>taotao-dubbo-interface</module>
     </modules>
     <!--集中定义版本号-->
     <properties>
