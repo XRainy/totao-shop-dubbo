@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Arrays;
+
 /**
  * @author : dx
  * @date : 2017/12/5
@@ -33,4 +35,5 @@ public class DubboTest {
             e.printStackTrace();
         }
     }
+
 }

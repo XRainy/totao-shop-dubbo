@@ -20,8 +20,12 @@
     <dubbo:protocol name="dubbo" port="20880" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.taotao.dubbo.service.ContentService" ref="contentService" />
-
     <!-- 和本地bean一样实现服务 -->
+    <dubbo:service interface="com.taotao.dubbo.service.ContentService" ref="contentService" />
     <bean id="contentService" class="com.taotao.rest.service.impl.ContentServiceImpl" />
+
+
+    <dubbo:service interface="com.taotao.dubbo.service.ItemCatService" ref="itemCatService" />
+    <bean id="itemCatService" class="com.taotao.rest.service.impl.ItemCatServiceImpl" />
+
 </beans>

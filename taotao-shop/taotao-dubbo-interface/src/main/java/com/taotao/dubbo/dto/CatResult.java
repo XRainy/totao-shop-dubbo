@@ -1,5 +1,6 @@
-package com.taotao.rest.pojo;
+package com.taotao.dubbo.dto;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -7,7 +8,9 @@ import java.util.List;
  * @aate : 2017/11/4
  * Description :
  */
-public class CatResult {
+public class CatResult implements Serializable{
+    private static final long serialVersionUID = 1L;
+
     private List<?> data;
 
     public List<?> getData() {
